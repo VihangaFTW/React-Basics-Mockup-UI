@@ -22,9 +22,8 @@ function App() {
             {CORE_CONCEPTS.map((object) => {
               return (
                 <CoreConcept
-                  title={object.title}
-                  description={object.description}
-                  image={object.image}
+                key = {object.title}
+                  {...object}
                 ></CoreConcept>
               );
             })}
